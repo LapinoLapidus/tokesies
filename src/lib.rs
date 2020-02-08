@@ -70,6 +70,7 @@ use std::fmt;
 use std::borrow::Cow;
 
 /// Contains context for a token extracted from an input.
+#[derive(Clone)]
 pub struct Token<'a> {
     /// The content of the extracted token.
     pub term: Cow<'a, str>,
